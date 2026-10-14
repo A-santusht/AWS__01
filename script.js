@@ -12,7 +12,7 @@ request.onreadystatechange = function () {
 request.send();
 
 
-// ---------- 1. Menu button for mobile ----------
+
 function toggleMenu() {
     var navbar = document.getElementById("navbar");
     if (navbar.className == "") {
@@ -24,7 +24,7 @@ function toggleMenu() {
 document.getElementById("menuBtn").onclick = toggleMenu;
 
 
-// ---------- 2. Waste sorter ----------
+
 function checkWaste() {
     var bin = document.getElementById("wasteItem").value;
     var result = document.getElementById("wasteResult");
@@ -46,7 +46,7 @@ function checkWaste() {
 document.getElementById("wasteBtn").onclick = checkWaste;
 
 
-// ---------- 3. Eco tip generator (tips come from data.xml) ----------
+
 function showTip() {
     var text = document.getElementById("tipText");
 
@@ -62,7 +62,7 @@ function showTip() {
 document.getElementById("tipBtn").onclick = showTip;
 
 
-// ---------- 4. Carbon footprint calculator ----------
+
 function calculate() {
     var km = Number(document.getElementById("km").value);
     var ac = Number(document.getElementById("ac").value);
@@ -90,7 +90,7 @@ function calculate() {
 document.getElementById("calcBtn").onclick = calculate;
 
 
-// ---------- 5. Quiz (questions come from data.xml) ----------
+--
 function showQuiz() {
     var box = document.getElementById("quizBox");
     var questions = xmlData.getElementsByTagName("question");
@@ -142,7 +142,7 @@ function checkQuiz() {
 document.getElementById("quizBtn").onclick = checkQuiz;
 
 
-// ---------- 6. Pledge form ----------
+
 function submitPledge() {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
