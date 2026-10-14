@@ -1,0 +1,250 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+    background-color: white;
+}
+
+/* Header */
+header {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+header h1 {
+    margin: 0;
+    float: left;
+    font-size: 26px;
+}
+
+nav {
+    float: right;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    line-height: 36px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* menu button is hidden on big screens */
+#menuBtn {
+    display: none;
+}
+
+/* Sections */
+section {
+    padding: 30px 20px;
+}
+
+section h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+section > p {
+    text-align: center;
+}
+
+.grey {
+    background-color: lightgrey;
+}
+
+/* Hero */
+.hero {
+    background-color: darkseagreen;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+.button {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+.button:hover {
+    background-color: darkgreen;
+}
+
+/* Boxes in rows */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.box {
+    width: 25%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    background-color: white;
+    flex-grow: 1;
+}
+
+.box img {
+    width: 100%;
+    height: 150px;
+    background-color: lightgrey;
+}
+
+.fact {
+    width: 30%;
+    flex-grow: 1;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: lightyellow;
+    text-align: center;
+}
+
+/* Table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: green;
+    color: white;
+}
+
+/* Tools */
+.tool {
+    border: 1px solid black;
+    background-color: white;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.tool h3 {
+    margin-top: 0;
+}
+
+/* Form elements */
+input, select {
+    width: 100%;
+    max-width: 300px;
+    padding: 5px;
+    margin: 5px 0 10px 0;
+    border: 1px solid black;
+}
+
+button {
+    padding: 6px 14px;
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+#pledgeForm {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+#pledge p {
+    text-align: center;
+}
+
+/* Result messages */
+#wasteResult, #calcResult, #quizResult, #tipText, #formMsg {
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+}
+
+.good {
+    color: green;
+}
+
+/* Quiz */
+.question {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: lightgreen;
+}
+
+/* Responsive - tablets and phones */
+@media (max-width: 700px) {
+    header h1 {
+        float: none;
+    }
+
+    #menuBtn {
+        display: block;
+        margin-top: 8px;
+    }
+
+    nav {
+        float: none;
+        display: none;
+    }
+
+    nav.show {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        margin-left: 0;
+        border-top: 1px solid white;
+    }
+
+    .box, .fact {
+        width: 100%;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+}

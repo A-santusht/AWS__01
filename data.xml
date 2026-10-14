@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+
+    <tips>
+        <tip>Carry your own bag when you go shopping.</tip>
+        <tip>Turn off the lights when you leave a room.</tip>
+        <tip>Use both sides of the paper.</tip>
+        <tip>Take a short shower instead of a long one.</tip>
+        <tip>Plant a tree on your birthday.</tip>
+        <tip>Use a steel bottle instead of buying plastic bottles.</tip>
+        <tip>Walk or cycle for short trips.</tip>
+        <tip>Do not waste food. Take only what you can eat.</tip>
+        <tip>Repair things instead of throwing them away.</tip>
+        <tip>Switch off the TV and chargers from the plug.</tip>
+    </tips>
+
+    <quiz>
+        <question>
+            <text>Which bin is used for food waste?</text>
+            <option>Green</option>
+            <option>Blue</option>
+            <option>Red</option>
+            <answer>0</answer>
+        </question>
+        <question>
+            <text>What does the second R in 3R's stand for?</text>
+            <option>Remove</option>
+            <option>Reuse</option>
+            <option>Repair</option>
+            <answer>1</answer>
+        </question>
+        <question>
+            <text>Which gas is the main cause of global warming?</text>
+            <option>Oxygen</option>
+            <option>Nitrogen</option>
+            <option>Carbon dioxide</option>
+            <answer>2</answer>
+        </question>
+    </quiz>
+
+</data>

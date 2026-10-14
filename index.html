@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Earth - Environmental Awareness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Green Earth</h1>
+        <button id="menuBtn">Menu</button>
+        <nav id="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#waste">Waste Management</a>
+            <a href="#practices">Eco Practices</a>
+            <a href="#tools">Try It</a>
+            <a href="#pledge">Pledge</a>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+        <h2>Protect Our Environment</h2>
+        <p>Small steps by everyone can make a big change for our planet.</p>
+        <a href="#pledge" class="button">Take the Pledge</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>Why Does It Matter?</h2>
+        <p>Pollution, climate change and too much waste are harming our planet. Protecting the environment means keeping our air, water and land clean for future generations.</p>
+
+        <div class="row">
+            <div class="box">
+                <img src="images/pollution.jpg" alt="Polluted river">
+                <h3>Pollution</h3>
+                <p>Air, water and soil pollution affects health and wildlife.</p>
+            </div>
+            <div class="box">
+                <img src="images/climate.jpg" alt="Dry land due to climate change">
+                <h3>Climate Change</h3>
+                <p>Rising temperatures are causing floods, droughts and melting ice.</p>
+            </div>
+            <div class="box">
+                <img src="images/forest.jpg" alt="Green forest">
+                <h3>Deforestation</h3>
+                <p>Cutting trees reduces oxygen and destroys animal homes.</p>
+            </div>
+        </div>
+
+        <h3>Quick Facts</h3>
+        <div class="row">
+            <div class="fact"><b>1 million</b><br>plastic bottles are bought every minute in the world</div>
+            <div class="fact"><b>8 million</b><br>tonnes of plastic enter the ocean every year</div>
+            <div class="fact"><b>1 tree</b><br>can absorb about 20 kg of CO2 in a year</div>
+        </div>
+    </section>
+
+    <!-- WASTE MANAGEMENT -->
+    <section id="waste" class="grey">
+        <h2>Waste Management</h2>
+        <p>Follow the 3 R's: <b>Reduce</b>, <b>Reuse</b> and <b>Recycle</b>. Segregating waste at home is the first step.</p>
+
+        <table>
+            <tr>
+                <th>Bin Colour</th>
+                <th>Type of Waste</th>
+                <th>Examples</th>
+            </tr>
+            <tr>
+                <td>Green</td>
+                <td>Wet / Biodegradable</td>
+                <td>Food scraps, vegetable peels, leaves</td>
+            </tr>
+            <tr>
+                <td>Blue</td>
+                <td>Dry / Recyclable</td>
+                <td>Paper, plastic, glass, metal cans</td>
+            </tr>
+            <tr>
+                <td>Red</td>
+                <td>Hazardous</td>
+                <td>Batteries, medicines, bulbs, e-waste</td>
+            </tr>
+        </table>
+
+        <!-- Waste sorter tool -->
+        <div class="tool">
+            <h3>Which bin does it go in?</h3>
+            <select id="wasteItem">
+                <option value="">-- Select an item --</option>
+                <option value="green">Banana peel</option>
+                <option value="blue">Newspaper</option>
+                <option value="blue">Plastic bottle</option>
+                <option value="red">Old battery</option>
+                <option value="green">Tea leaves</option>
+                <option value="blue">Glass jar</option>
+                <option value="red">Expired medicine</option>
+            </select>
+            <button id="wasteBtn">Check</button>
+            <p id="wasteResult"></p>
+        </div>
+    </section>
+
+    <!-- ECO PRACTICES -->
+    <section id="practices">
+        <h2>Eco-Friendly Practices</h2>
+        <div class="row">
+            <div class="box">
+                <h3>Save Energy</h3>
+                <ul>
+                    <li>Switch off lights and fans when not in use</li>
+                    <li>Use LED bulbs</li>
+                    <li>Unplug chargers</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Save Water</h3>
+                <ul>
+                    <li>Fix leaking taps</li>
+                    <li>Turn off tap while brushing</li>
+                    <li>Collect rainwater</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Reduce Plastic</h3>
+                <ul>
+                    <li>Carry a cloth bag</li>
+                    <li>Use a steel water bottle</li>
+                    <li>Say no to single-use plastic</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Travel Smart</h3>
+                <ul>
+                    <li>Walk or cycle for short distances</li>
+                    <li>Use public transport</li>
+                    <li>Carpool when possible</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tool">
+            <h3>Eco Tip Generator</h3>
+            <button id="tipBtn">Show me a tip</button>
+            <p id="tipText">Click the button to get a tip!</p>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE TOOLS -->
+    <section id="tools" class="grey">
+        <h2>Try It Yourself</h2>
+
+        <!-- Footprint calculator -->
+        <div class="tool">
+            <h3>Carbon Footprint Calculator</h3>
+            <p>Enter your daily habits to get a rough estimate.</p>
+
+            <label>Kilometres travelled by car/bike per day:</label><br>
+            <input type="number" id="km" min="0" value="0"><br>
+
+            <label>Hours of AC / heater used per day:</label><br>
+            <input type="number" id="ac" min="0" value="0"><br>
+
+            <label>Do you eat meat?</label><br>
+            <select id="meat">
+                <option value="0">No</option>
+                <option value="2">Sometimes</option>
+                <option value="4">Daily</option>
+            </select><br>
+
+            <button id="calcBtn">Calculate</button>
+            <p id="calcResult"></p>
+        </div>
+
+        <!-- Quiz -->
+        <div class="tool">
+            <h3>Environment Quiz</h3>
+            <div id="quizBox"></div>
+            <button id="quizBtn">Submit Answers</button>
+            <p id="quizResult"></p>
+        </div>
+    </section>
+
+    <!-- PLEDGE FORM -->
+    <section id="pledge">
+        <h2>Take the Green Pledge</h2>
+        <p>Promise to do your part for the environment.</p>
+
+        <div id="pledgeForm">
+            <label>Name:</label><br>
+            <input type="text" id="name" placeholder="Your name"><br>
+
+            <label>Email:</label><br>
+            <input type="text" id="email" placeholder="Your email"><br>
+
+            <label>I will:</label><br>
+            <select id="promise">
+                <option value="">-- Choose a promise --</option>
+                <option>Plant a tree</option>
+                <option>Stop using single-use plastic</option>
+                <option>Save water and electricity</option>
+                <option>Segregate my waste</option>
+            </select><br>
+
+            <button type="button" id="pledgeBtn">Submit Pledge</button>
+        </div>
+        <p id="formMsg"></p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Green Earth - Environmental Awareness Website</p>
+        <p>Made by a student for Mid-Semester Examination</p>
+        <a href="#home">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
